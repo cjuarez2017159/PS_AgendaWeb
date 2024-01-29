@@ -4,18 +4,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(27,233,17,1) 100%);
 }
 
-.login-container {
+.container {
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
+    background-color: white;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
+    padding-right: 8px;
 }
 
 input {
@@ -40,4 +43,13 @@ button:hover {
 #error-message {
     color: red;
     font-weight: bold;
+}
+
+#loginForm{
+    background-color: white;
+}
+
+.img{
+    width: 400px;
+    height: 300px;
 }
