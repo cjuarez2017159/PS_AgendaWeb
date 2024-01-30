@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 
     display: flex;
     justify-content: center;
@@ -16,10 +17,13 @@ body {
     margin: auto;
 
     text-align: center;
-    border: 1px solid #ccc;
+    
     padding: 20px;
-    border-radius: 5px;
-    background-color: gray;
+    border-radius: 25px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+    background-color: #00000046;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 label {
@@ -28,10 +32,15 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 80%;
     padding: 8px;
     margin-bottom: 16px;
-    border-radius: 6px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.442);
+    border: none;
+    margin: 10px;
+    color: white;
+    
 }
 
 button {
@@ -56,7 +65,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    
 }
 
 .img{
@@ -64,8 +73,9 @@ button:hover {
     height: 300px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .container {
+        flex-direction: column;
         max-width: 100%;
         padding: 10px;
     }
