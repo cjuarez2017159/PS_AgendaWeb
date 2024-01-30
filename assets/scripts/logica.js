@@ -12,7 +12,6 @@ function login() {
     // Verificar credenciales (simulación simple)
     if (username === "cjuarez" && password === "123") {
         errorMessage.textContent = ""; // Limpiar mensaje de error
-        alert("Inicio de sesión exitoso");
         window.location.href = "./assets/pages/contactos.html";
         // Aquí puedes redirigir a otra página o realizar otras acciones después del inicio de sesión.
     } else {
